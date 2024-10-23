@@ -9,7 +9,7 @@ describe('TreeView Component', () => {
     it('renders correctly with given data', () => {
         const { getByText, queryAllByText } = render(<TreeView directoryData={directoryData} />);
 
-        // Expand Portugal to make its sites visible
+        // Test if Portugal and Expand Portugal to make its sites visible
         const portugalNode = getByText(/Portugal/i);
         fireEvent.click(portugalNode); // Expand Portugal Node
 

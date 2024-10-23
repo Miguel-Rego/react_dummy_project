@@ -1,4 +1,3 @@
-// dataGenerator.ts
 export function generateDirectoryData(numActivities: number, numWorkstations: number) {
     // Define regions and their respective sites
     const regions = {
@@ -17,7 +16,7 @@ export function generateDirectoryData(numActivities: number, numWorkstations: nu
 
             // Generate activities and workstations for each site
             for (let j = 0; j < numActivities; j++) {
-                const activityName = `Activity A${280 + j}`;
+                const activityName = `A${280 + j}`;
                 const workstations: any[] = [];
 
                 for (let k = 0; k < numWorkstations; k++) {
